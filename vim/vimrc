@@ -201,9 +201,10 @@
             let g:solarized_contrast="high"     " Set the contrast to high
             let g:solarized_visibility="high"   " Set the visibility of special characters to high
         else
-            set t_co=256                        " Tell vim to use 256 colors
+            "set t_co=256                        " Tell vim to use 256 colors
 
-            let g:solarized_termcolors=256      " Use the 256 degreaded color mode
+            "let g:solarized_termcolors=256      " Use the 256 degreaded color mode
+            let g:solarized_termcolors=&t_Co    " Use the number of terminal colors degreaded color mode
             let g:solarized_contrast="normal"   " Set the contrast to normal
             let g:solarized_visibility="normal" " Set the visibility of special characters to normal
         endif
