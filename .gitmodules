@@ -13,3 +13,6 @@
 [submodule "vim/bundle/stakeholders"]
 	path = vim/bundle/stakeholders
 	url = https://github.com/tomtom/stakeholders_vim.git
+[submodule "vim/bundle/powershell"]
+	path = vim/bundle/powershell
+	url = https://github.com/PProvost/vim-ps1.git

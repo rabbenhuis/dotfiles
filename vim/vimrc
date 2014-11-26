@@ -215,6 +215,13 @@
 
    " }
 
+   " TSkeleton {
+
+        let g:tskelUserName="Richard Abbenhuis"
+        let g:tskelUserEmail="richard@abbenhuis.net"
+
+   " }
+
 " }
 
 " Functions {
