@@ -1,0 +1,71 @@
+" Modeline and Notes {
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker:
+"
+"===============================================================================
+"
+"   Personal gvimrc file.
+"
+"   Copyright (C) 2014 by Richard Abbenhuis
+"
+"   Permission is hereby granted, free of charge, to any person obtaining a
+"   copy of this software and associated documentation files (the "Software"),
+"   to deal in the Software without restriction, including without l> imitation
+"   the rights to use, copy, modify, merge, publish, distribute, sublicense,
+"   and/or sell copies of the Software, and to permit persons to whom the
+"   Software is furnished to do so, subject to the following conditions:
+"
+"   The above copyright notice and this permission notice shall be included in
+"   all copies or substantial portions of the Software.
+"
+"   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+"   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+"   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+"   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+"   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+"   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+"   DEALINGS IN THE SOFTWARE.
+"
+"   Description:
+"
+"   The gvimrc file contains my personal runtime configuration settings
+"   to initialize gVim when it starts.
+"
+"   Revisions:
+"   11-11-2014  R. Abbenhuis    Created gvimrc
+"   25-11-2014  R. Abbenhuis    Added set lines=50 and set columns=125
+"
+"===============================================================================
+" }
+
+" Environment {
+
+    " Identify platform {
+
+        silent function! IsWindowsGUI()
+            return (IsWindows() || has('gui_running'))
+        endfunction
+
+    "}
+
+" }
+
+" General {
+
+" }
+
+" GUI Options {
+
+    if (has('gui_running'))
+        set guioptions-=T           " Do not include the toolbar
+        set guioptions+=e           " Add tab pages only if there are at least 2 tab pages
+        set guitablabel=%M\ %t      " Set the label of the GUI tab page
+
+        set lines=50                " 50 lines of text instead of 24
+        set columns=125             " 125 columns of text instead of 80
+
+        if (IsWindowsGUI())
+            set guifont=Lucida_Console:h10,Courier_New:h10
+        endif
+    endif
+
+" }
