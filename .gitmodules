@@ -16,3 +16,9 @@
 [submodule "vim/bundle/powershell"]
 	path = vim/bundle/powershell
 	url = https://github.com/PProvost/vim-ps1.git
+[submodule "vim/bundle/tabular"]
+	path = vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
+[submodule "vim/bundle/puppet"]
+	path = vim/bundle/puppet
+	url = https://github.com/rodjek/vim-puppet.git
