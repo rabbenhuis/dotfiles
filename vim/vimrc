@@ -228,6 +228,11 @@
 
         autocmd vimenter * NERDTree $HOME
 
+        let NERDTreeShowHidden=1
+        let NERDTreeShowBookmarks=1
+        let NERDTreeIgnore=['^NTUSER.DAT*', '^ntuser.*']
+        let NERDTreeChDirMode=2
+
     " }
 
 " }
