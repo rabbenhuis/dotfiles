@@ -193,7 +193,6 @@
 
 " }
 
-
 " Plugins {
 
     " Solarized {
@@ -232,6 +231,17 @@
         let NERDTreeShowBookmarks=1
         let NERDTreeIgnore=['^NTUSER.DAT*', '^ntuser.*']
         let NERDTreeChDirMode=2
+
+    " }
+
+    " MiniBufExplorer {
+
+        let g:miniBufExplAutoStart=1
+        let g:miniBufExplBuffersNeeded=2
+        let g:miniBufExplMinSize=2
+        let g:miniBufExplBRSplit=0
+        let g:miniBufExplSplitToEdge=0
+        let g:miniBufExplUseSingleClick=1
 
     " }
 
