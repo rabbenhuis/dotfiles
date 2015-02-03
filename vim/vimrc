@@ -214,14 +214,21 @@
 
         colorscheme solarized                   " Enable the colorscheme
 
-   " }
+    " }
 
-   " TSkeleton {
+    " TSkeleton {
 
         let g:tskelUserName="Richard Abbenhuis"
         let g:tskelUserEmail="richard@abbenhuis.net"
+        let g:tskelDateFormat="%m/%d/%Y"
 
-   " }
+    " }
+
+    " NERDTree {
+
+        autocmd vimenter * NERDTree $HOME
+
+    " }
 
 " }
 
