@@ -169,7 +169,7 @@
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
     set list
-    set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
+    set listchars=tab:â€º\ ,trail:â€¢,extends:#,nbsp:. " Highlight problematic whitespace
 
 " }
 
@@ -227,7 +227,7 @@
 
         autocmd vimenter * NERDTree $HOME
 
-        let NERDTreeShowHidden=1
+        let NERDTreeShowHidden=0
         let NERDTreeShowBookmarks=1
         let NERDTreeIgnore=['^NTUSER.DAT*', '^ntuser.*']
         let NERDTreeChDirMode=2
