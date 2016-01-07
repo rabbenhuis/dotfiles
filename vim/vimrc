@@ -35,6 +35,7 @@
 "   20-11-2014  R. Abbenhuis    Added pathogen and solarized
 "   25-11-2014  R. Abbenhuis    Added Vim UI, Formatting, Key (re)mappings
 "                               and Functions section
+"   07-01-2016  R. Abbenhuis    Disabled NERDTree
 "
 "===============================================================================
 " }
@@ -95,7 +96,7 @@
         set langmenu=none
     endif
 
-    set background=dark             " Assume a dark background
+    set background=light            " Assume a light background
 
     filetype plugin indent on       " Automatically detect file type types
     syntax on                       " Syntax highlighting
@@ -169,7 +170,7 @@
     set scrolloff=3                 " Minimum lines to keep above and below cursor
     set foldenable                  " Auto fold code
     set list
-    set listchars=tab:â€º\ ,trail:â€¢,extends:#,nbsp:. " Highlight problematic whitespace
+    set listchars=tab:›\ ,trail:•,extends:#,nbsp:. " Highlight problematic whitespace
 
 " }
 
@@ -198,12 +199,10 @@
     " Solarized {
 
         if has('gui_running')
+            let g:solarized_termcolors=256      " Use 256 colors
             let g:solarized_contrast="high"     " Set the contrast to high
             let g:solarized_visibility="high"   " Set the visibility of special characters to high
         else
-            "set t_co=256                        " Tell vim to use 256 colors
-
-            "let g:solarized_termcolors=256      " Use the 256 degreaded color mode
             let g:solarized_termcolors=&t_Co    " Use the number of terminal colors degreaded color mode
             let g:solarized_contrast="normal"   " Set the contrast to normal
             let g:solarized_visibility="normal" " Set the visibility of special characters to normal
@@ -219,18 +218,21 @@
 
         let g:tskelUserName="Richard Abbenhuis"
         let g:tskelUserEmail="richard@abbenhuis.net"
+        let g:tskelUserCompany="TenneT TSO B.V."
         let g:tskelDateFormat="%m/%d/%Y"
+        let g:tskelLicense="All rights reserved"
+
 
     " }
 
     " NERDTree {
 
-        autocmd vimenter * NERDTree $HOME
+"        autocmd vimenter * NERDTree $HOME
 
-        let NERDTreeShowHidden=0
-        let NERDTreeShowBookmarks=1
-        let NERDTreeIgnore=['^NTUSER.DAT*', '^ntuser.*']
-        let NERDTreeChDirMode=2
+"        let NERDTreeShowHidden=0
+"        let NERDTreeShowBookmarks=1
+"        let NERDTreeIgnore=['^NTUSER.DAT*', '^ntuser.*']
+"        let NERDTreeChDirMode=2
 
     " }
 
@@ -286,4 +288,5 @@
         call InitializeDirectories()
     " }
 " }
+
 
