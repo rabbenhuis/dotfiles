@@ -211,3 +211,4 @@ foreach($Component in $InstallComponents.Split(',')) {
         } # powershell
     } # switch ($Component)
 } #foreach($Component in $InstallComponents.Split(','))
+
