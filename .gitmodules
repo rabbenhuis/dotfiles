@@ -49,3 +49,21 @@
 [submodule "vim/bundle/snipmate"]
 	path = vim/bundle/snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "xresources/xresources"]
+	path = xresources/xresources
+	url = https://github.com/solarized/xresources.git
+[submodule "xresources/solarized"]
+	path = xresources/solarized
+	url = https://github.com/solarized/xresources.git
+[submodule "tmux/colors-solarized"]
+	path = tmux/colors-solarized
+	url = https://github.com/seebi/tmux-colors-solarized.git
+[submodule "dircolors/solarized"]
+	path = dircolors/solarized
+	url = https://github.com/seebi/dircolors-solarized.git
+[submodule "mintty/mintty-colors-solarized"]
+	path = mintty/mintty-colors-solarized
+	url = https://github.com/mavnn/mintty-colors-solarized.git
+[submodule "gnome-terminal/gnome-terminal-colors-solarized"]
+	path = gnome-terminal/gnome-terminal-colors-solarized
+	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git

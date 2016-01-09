@@ -96,7 +96,8 @@
         set langmenu=none
     endif
 
-    set background=light            " Assume a light background
+"    set background=light            " Assume a light background
+    set background=dark              " Assume a dark background
 
     filetype plugin indent on       " Automatically detect file type types
     syntax on                       " Syntax highlighting

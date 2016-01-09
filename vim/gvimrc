@@ -65,6 +65,8 @@
 
         if (IsWindowsGUI())
             set guifont=Lucida_Console:h10,Courier_New:h10
+        else
+            set guifont=Terminus\ 16
         endif
     endif
 
